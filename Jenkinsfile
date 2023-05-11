@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('vcs') {
             steps {
-                git url: 'https://github.com/devbydk/StudentCoursesRestAPI.git'
+                git url: 'https://github.com/devbydk/StudentCoursesRestAPI.git',
                     branch: 'master'
             }
         }
@@ -25,4 +25,3 @@ pipeline {
     }
 
 }
-
