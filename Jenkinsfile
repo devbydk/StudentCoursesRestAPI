@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'JDK_17'}
     triggers {
-        pollSCM('* * * * *')
+        pollSCM('* 23 * * 1-5')
     }
     stages {
         stage('vcs') {
